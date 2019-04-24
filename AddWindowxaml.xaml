@@ -1,0 +1,26 @@
+﻿<Window x:Class="TestPrepare.AddWindowxaml"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestPrepare"
+        mc:Ignorable="d"
+        Title="AddWindowxaml" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="41,43,0,0" VerticalAlignment="Top" Height="61" Width="239" FontSize="36" HorizontalContentAlignment="Center" />
+        <Label Content="Owner" HorizontalAlignment="Left" Margin="41,34.2,0,0" VerticalAlignment="Top" Height="61" Width="239" Grid.Row="1" FontSize="36" HorizontalContentAlignment ="Center"/>
+        <Label Content="Type" HorizontalAlignment="Left" Margin="41,34.4,0,0" VerticalAlignment="Top" Height="61" Width="239" Grid.Row="2" FontSize="36" HorizontalContentAlignment="Center"/>
+        <TextBox HorizontalAlignment="Left" Height="52" Margin="285,43,0,0" TextWrapping="Wrap" Text="aaaa" VerticalAlignment="Top" Width="441" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" x:Name="TB"/>
+        <ComboBox HorizontalAlignment="Left" Height="61" Margin="285,34.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="441" x:Name="CBOwner" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox HorizontalAlignment="Left" Height="61" Margin="285,34.4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="441" x:Name="CBType" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Content="ADD" HorizontalAlignment="Left" Margin="41,40.8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="239" Height="54" Click="Button_Click" FontSize="35"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="487,40.8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="239" Height="54" Click="Button_Click_1" FontSize="36"/>
+
+    </Grid>
+</Window>
